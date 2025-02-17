@@ -51,7 +51,7 @@ const Header = () => {
                   />
                 </div>
                 <div>
-                  <h2 className="md:text-[30px] text-[16px]">Shop Mate</h2>
+                  <h2 className="md:text-[30px] text-[16px]">Shop-Mate</h2>
                 </div>
               </div>
             </div>
