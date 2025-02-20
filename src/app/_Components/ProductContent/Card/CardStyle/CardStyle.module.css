@@ -1,0 +1,48 @@
+.card {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardImage {
+  transition: transform 0.4s;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+  right: -25px;
+  top: 20px;
+  bottom: 200px;
+  padding: 0 50px;
+  text-align: center;
+  transition: height 0.4s;
+  overflow: hidden;
+}
+
+.card:hover .activeCart {
+  background-color: #00b206;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.activeCart {
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card:hover .overlay {
+  height: 20%;
+}
+.card:hover {
+  box-shadow: rgba(8, 192, 14, 0.2) 0px 7px 29px 0px;
+  transition: 0.4s;
+  border: 2px solid #6a9e6d;
+}
