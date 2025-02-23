@@ -6,24 +6,27 @@ import "@smastrom/react-rating/style.css";
 import { useState } from "react";
 import { Star } from "@smastrom/react-rating";
 import CardStyle from "./CardStyle/CardStyle.module.css";
+import DetailsModal from "../DetailsModal/page";
 
 const Card = () => {
   const [rating, setRating] = useState(0);
 
   return (
     <div className="mt-5">
-      <div className="lg:grid-cols-4 grid md:grid-cols-3 grid-cols-1">
-        <div className={`border-2 rounded-lg p-6 relative ${CardStyle.card}`}>
+      <div className="lg:grid-cols-4 lg:p-0 p-2 grid md:grid-cols-3 grid-cols-1">
+        <div
+          className={`border-2 rounded-lg p-3 lg:p-6 relative ${CardStyle.card}`}
+        >
           <div>
             <Image
               src="/product13.png"
               width={200}
               height={200}
               alt="productImage"
-              className={`w-full ${CardStyle.cardImage} `}
+              className={`w-full ${CardStyle.cardImage} lg:w-full lg:h-[300px]`}
             />
           </div>
-          <div className="flex justify-between items-center mt-14">
+          <div className="flex justify-between items-center mt-4 lg:mt-14">
             <div>
               <h4 className="text-base text-gray-600">Big Potatos</h4>
               <h2 className="text-lg">$14.99</h2>
@@ -50,8 +53,8 @@ const Card = () => {
             <div className="w-[45px] h-[45px] flex justify-center items-center rounded-full bg-white border-2">
               <Heart size={20} />
             </div>
-            <div className="w-[45px] h-[45px] flex justify-center items-center rounded-full bg-white border-2">
-              <Eye size={20} />
+            <div>
+              <DetailsModal />
             </div>
           </div>
         </div>

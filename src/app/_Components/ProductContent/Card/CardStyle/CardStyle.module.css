@@ -17,7 +17,7 @@
   flex-direction: column;
   right: -25px;
   top: 20px;
-  bottom: 200px;
+  bottom: 100px;
   padding: 0 50px;
   text-align: center;
   transition: height 0.4s;
@@ -39,7 +39,7 @@
 }
 
 .card:hover .overlay {
-  height: 20%;
+  height: 25%;
 }
 .card:hover {
   box-shadow: rgba(8, 192, 14, 0.2) 0px 7px 29px 0px;
